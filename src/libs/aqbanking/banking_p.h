@@ -148,9 +148,9 @@ static int AB_Banking_LoadAllUsers(AB_BANKING *ab);
 
 static int AB_Banking_LoadAllAccounts(AB_BANKING *ab);
 
-static int AB_Banking_LoadConfig(AB_BANKING *ab);
+int AB_Banking_LoadConfig(AB_BANKING *ab);
 static int AB_Banking_UnloadConfig(AB_BANKING *ab);
-static int AB_Banking_SaveConfig(AB_BANKING *ab);
+int AB_Banking_SaveConfig(AB_BANKING *ab);
 
 /* only for import of older configurations */
 static int AB_Banking_SetUniqueId(AB_BANKING *ab, uint32_t uid);

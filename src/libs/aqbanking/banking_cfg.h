@@ -34,6 +34,11 @@ AQBANKING_API
 int AB_Banking_UnlockAppConfig(AB_BANKING *ab);
 
 
+AQBANKING_API
+int AB_Banking_LoadConfig(AB_BANKING *ab);
+
+AQBANKING_API
+int AB_Banking_SaveConfig(AB_BANKING *ab);
 
 
 AQBANKING_API
