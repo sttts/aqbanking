@@ -901,8 +901,8 @@ int AH_Msg_DecodeMsg(AH_MSG *hmsg,
   const char *mode;
   uint32_t expMsgNum;
   uint32_t guiid;
-
-  assert(hmsg->dialog);
+	
+  assert(hmsg);
   e=AH_Dialog_GetMsgEngine(hmsg->dialog);
   assert(e);
 
@@ -1809,6 +1809,5 @@ const char *AH_Msg_GetCrypterId(const AH_MSG *hmsg) {
 #include "msgcrypt_rdh.c"
 #include "msgcrypt_pintan.c"
 #include "msgcrypt.inc"
-
 
 
