@@ -740,7 +740,7 @@ int AH_Outbox__CBox_RecvQueue(AH_OUTBOX__CBOX *cbox,
   rv=AH_Dialog_RecvMessage(dlg, &msg);
   if (rv>=200 && rv<300)
     rv=0;
-  if (rv) {
+  if (rv || msg == 0) {
     DBG_INFO(AQHBCI_LOGDOMAIN,
 	     "Error receiving response (%d)", rv);
     GWEN_Gui_ProgressLog2(0,
