@@ -1,4 +1,4 @@
-SUBDIRS=libs plugins tools test
+SUBDIRS=libs plugins
 
 sources:
 	for d in $(SUBDIRS); do \
