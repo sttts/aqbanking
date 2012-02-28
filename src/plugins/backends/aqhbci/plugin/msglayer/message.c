@@ -1469,6 +1469,8 @@ void AH_Msg_LogMessage(AH_MSG *msg,
   char vbuf[32];
   int rv;
 
+    return;
+
   assert(msg);
   assert(buf);
 
